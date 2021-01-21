@@ -29,20 +29,20 @@
        (stretchability . 0))
 
 	top-system-spacing =
-    #'((basic-distance . 20)
-       (minimum-distance . 20)
+    #'((basic-distance . 12)
+       (minimum-distance . 12)
        (padding . -100)
        (stretchability . 0))
 
 	top-markup-spacing =
-    #'((basic-distance . 5)
-       (minimum-distance . 5)
+    #'((basic-distance . 2)
+       (minimum-distance . 2)
        (padding . -100)
        (stretchability . 0))
 
 	markup-system-spacing =
-    #'((basic-distance . 15)
-       (minimum-distance . 15)
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . -100)
        (stretchability . 0))
 
@@ -69,6 +69,8 @@
        (minimum-distance . 0)
        (padding . 0)
        (stretchability . 0))
+
+	systems-per-page = #2
 
 	bookTitleMarkup = \markup {
 		\fill-line {
@@ -543,7 +545,6 @@ bc =
 		\Voice
 		\override TupletBracket.bracket-visibility = ##f
 		\override TupletBracket.avoid-scripts = ##f
-		\override TupletBracket.tuplet-slur = ##t
 	}
 	\context {
 		\Lyrics
