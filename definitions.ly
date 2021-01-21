@@ -29,14 +29,14 @@
        (stretchability . 0))
 
 	top-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . -100)
        (stretchability . 0))
 
 	top-markup-spacing =
-    #'((basic-distance . 2)
-       (minimum-distance . 2)
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
        (padding . -100)
        (stretchability . 0))
 
@@ -675,6 +675,7 @@ tocLabelLong = #(define-music-function
 
 
 tempoKyrie = \tempoMarkup "Allegro"
+tempoGloria = \tempoMarkup "Allegro non molto"
 
 
 \include "notes/vl1.ly"
