@@ -73,3 +73,76 @@ GloriaViolinoII = {
 		a32( gis fis e d cis h a) h8 gis' a,4 r\fermata \bar "|." %34 finis
 	}
 }
+
+CredoViolinoII = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoCredo
+		<e cis' a'>4\fE e16 a cis e fis, a e a fis a d fis
+		e8 a, cis a \once \slurDashed e'16( dis32 cis h a gis fis) e16 e' gis h,
+		a a' a a a fis dis a gis e' e, fis gis e a e
+		h' e, cis' e, d' h' e,, d' \tuplet 6/4 4 { cis a h cis h a } fis' d h a
+		\tuplet 3/2 8 { gis fis e } a[ a'] h,8 gis' a,4 \sbOn cis16-! cis, \tuplet 3/2 8 { cis d cis } %5
+		e'-! e, \tuplet 3/2 8 { e fis e } e'-! e, \tuplet 3/2 8 { e fis e } d'-! d, \tuplet 3/2 8 { d e d } \sbOff d( h' d fis)
+		h( d,) d( cis) cis( ais) h-! e-! d fis h d e,, gis! h d
+		cis a' d, h' cis, a' a cis, h h' gis e d h gis e
+		cis' e, h' e, cis' e, a cis d e, gis h e gis h e,
+		a a, a a d e, e e cis' a e' cis a' a, a a' %10
+		a a, a a' a a, a a' a h, h a' a h, h a'
+		gis h gis e d h e, d' cis a cis e a cis, h a
+		\tuplet 3/2 8 { gis[ fis e] } a a' h,8 gis' a,4 r
+		a16 a' a a, gis gis' fis, fis' fis, dis dis eis eis cis cis' h
+		a a, h' h, cis' cis, a' a a-! a( h a) gis gis' fis fis, %15
+		fis dis dis eis eis cis eis gis h h, h' h h h, h' h
+		d eis, d' d cis fis h, gis' a, cis fis a gis,8 eis'
+		fis,4 fis fis fis8 d'
+		d8.( h32 cis) d16 h d h a( cis) cis8 cis16 e cis a
+		a8.(\trill gis32 a) gis8 e' cis8. h16 a8 cis %20
+		d8. e16 \tuplet 3/2 8 { fis16 e d cis[ h a] gis[ fis e] } a a' h,8 gis'
+		a,4 \tempoEtIncarnatus cis cis,16( eis) gis( h) a( cis) cis( fis)
+		fis( cis) cis( h) h( d) d( fis) eis( gis) gis( h,) a( fis') fis( a,)
+		gis( cis) cis( eis) eis( gis) gis( gis,) gis( h) h( d) d( eis) eis( fis)
+		fis( a) a( cis) cis( a) a( fis) e( g) g( e) e( cis) cis( d) %25
+		d( fis,) fis( a) a( gis) gis( fis) fis a cis fis cis,8 eis'
+		fis,4 \tempoCrucifixus a8 a h4 a
+		ais16( cis) cis( fis) fis( ais,) ais( h) h( d) d( fis) fis( h) h( h,)
+		a( dis) dis( fis) fis( a) a( a,) a8.(\trill gis32 a) gis4
+		e'4. d8 c4 gis! %30
+		a16 c, c c cis cis cis cis d d d d e e e e
+		f f f f fis fis fis fis e-\critnote h h h h h h h
+		a8 \tempoEtResurrexit a'[ a a] e'4 e,
+		r8 cis' cis h16 cis d4 d
+		h8 h e d16 e \once \slurDashed cis32( a h cis d e fis gis) a16 e cis a %35
+		h h' h h h, h' a, a' a gis fis gis gis e h gis
+		e16. e'32 e16. e32 \tuplet 6/4 4 { e16 gis fis e fis gis } a16. a,32 a16. a32 \tuplet 6/4 4 { a16 h cis cis d e }
+		e( cis) cis( d) d( e,) e( d') \once \slurDashed cis32( a h cis d e fis gis) a16 e cis e
+		a,8 e cis a <a g'>4 <a fis'>
+		fis'2.\p h4~ %40
+		h8 d cis h ais4 fis'16.\f cis32 cis8\trill
+		\tuplet 6/4 4 { d16[ h cis d cis h] h' h, cis dis cis h e[ e, fis gis fis e] d' e, fis gis fis e }
+		\tuplet 3/2 8 { cis'[ h a] } a' cis, h8 gis' a,4 a8 a
+		a gis16 a h8 h h8. a16 a4
+		cis8 d16 e fis8 a, a4\trill gis %45
+		h16( gis') gis( eis) eis( d) d( h) a fis' fis fis fis fis, fis' fis
+		fis fis, eis fis gis8 fis fis8.(\trill eis32 fis) eis4
+		\slurDashed fis16( cis) a'( fis) cis'( a) fis'( cis) ais( fis) cis'( ais) \slurSolid fis' cis ais' fis
+		h, fis d' h fis' d h' fis cis fis, ais cis fis fis, e' fis,
+		d' h fis' d h' d, cis a' cis,8.(\trill h32 cis) h4 %50
+		<e h e,>8 h16 cis \appoggiatura e d8 cis16 h cis a' a a \tuplet 6/4 4 { a gis fis fis e d }
+		\tuplet 6/4 4 { cis h a a' gis a } h,8 gis' a, cis16 cis' h, h' a, a'
+		gis,-! h( cis d) cis gis' h, gis' a, fis cis' a fis' cis a' cis,
+		d fis, fis d' d e, e d' cis a' d, h' cis, a' a cis,
+		h e, gis h e h gis' h, ais fis cis' ais fis' cis ais' fis %55
+		fis a dis, fis a, fis' h,, a' gis e h' gis e' h gis' h,
+		e g cis, e g, e' a,, g' fis a d fis gis, gis' a, a'
+		a cis, cis h \tuplet 6/4 4 { h e, fis gis fis e } \parOn e'-\parenthesize-! h-! gis-! \parOff h-\parenthesize-! e,8 h''16( d,)
+		cis( a) e'( cis) h e, gis h d( h) gis'( d) h' gis d h
+		h8\trill a r4 r e\p %60
+		dis e2 dis4
+		e4 \tuplet 6/4 4 { h''16\f h, cis d cis h } cis a' a a \tuplet 6/4 4 { a cis, d e d cis }
+		d a' a a \tuplet 6/4 4 { a gis fis fis e d } d h' h d, cis a' h, d
+		\tuplet 6/4 4 { cis h a a' gis a } h,8 gis' a, e' \appoggiatura d16 cis8 h16 a
+		d4. h'16 d, \tuplet 6/4 4 { cis h a a' gis a } h,8 gis' %65
+		a,4 r r2\fermata \bar "|." %66 finis
+	}
+}
