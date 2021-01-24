@@ -282,13 +282,142 @@ CredoBassFigures = \figuremode {
 	r1 %66 finis
 }
 
-% Organo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+SanctusOrgano = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoSanctus
+		\mvTr a4\fE-\tuttiE a a8 a' e cis
+		a4 a a8 g' e cis
+		ais4 ais h8 h' gis a
+		e4 e \tempoPleni e8 e e e
+		a e e'16 h gis e a8 a a a %5
+		gis a r4 d,4. cis16 d
+		e8 a e e, a a'16 gis a8 a,
+		a4 a8 a d d'16 cis d8 d,
+		h8. cis16 d8 dis e e cis a
+		e' e e e a, a'16 gis a8 a, %10
+		d2 a\fermata \bar "|." %11 finis
+	}
+}
+
+SanctusBassFigures = \figuremode {
+	<3>2.. \bassFigureExtendersOn q8
+	<7!>2.. q8 \bassFigureExtendersOff
+	<6>2. <6 5>4
+	\bo <[6] 4> \bc <[5] 3>2.
+	r1 %5
+	<6 5>2 \bo <9 [5]>4 \bc <8 [6]>
+	<7> <4>8 <3> r2
+	r4 <7!> <9 4!>8 <8 3>4.
+	r8. <[6\\]>16 <8 6>8 <7 5> r4 <[6]>
+	\bo <[6] 4> \bc <[5] 3>2. %10
+	r1 %11 finis
+}
+
+BenedictusOrgano = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoBenedictus
+		\mvTr a'8\fE-\tuttiE a, a' gis fis fis, fis' e
+		d d e e a, a' a,16 cis e cis
+		a'8 a a, a' gis gis16 fis gis8 e
+		cis dis16 cis dis8 h e e h' h,
+		e gis16 fis e gis cis, e a, a' gis a h8 h, %5
+		e e, e' dis cis e16 dis cis8 h
+		a a h h e4 e
+		r8 e gis fis16 e a8. a,16 a8 a
+		d d d d d8. d16 cis8 cis
+		gis gis a16 a cis a e'8 e, e'16 e gis e %10
+		a8 a, a' gis fis fis, fis' e
+		d d e e a, a' a,16 a cis a
+		d8 d d d a a'16 gis a8 a
+		fis gis16 fis gis8 e a a e e
+		a, cis'16 h a cis fis, a d, d cis d e8 e, %15
+		a8. a16 a8 a d d16 cis d fis d cis
+		h8. cis16 d8 dis e e cis a
+		e' e e e a, a'16 gis a8 a,
+		d2 a\fermata \bar "|." %19 finis
+	}
+}
+
+BenedictusBassFigures = \figuremode {
+	r2 <[3]>
+	<6 5>1
+	r2 <6>
+	<7>8 <5> <\t> <[7 _+]> r4 <4>8 <_+>
+	r2 r8 \bo <[6 \l]>16 <5> <6 4>8 \bc <[5 _+]> %5
+	r2 <3>
+	<6 5>4 <_+>2.
+	r8 <[7!]> <6 5!>4 \bo <[9] 4> \bc <[8] 3>
+	<6>2 <4 2>4 <6>
+	<6 5>2 <3> %10
+	r2 <3>
+	<6 5>1
+	r2 \bo <[6] 4>8 \bc <[5] 3>4.
+	<7 5>8 <5 3> <\t \t> <[7]> r4 <4>8 <3>
+	r2 r8 \bo <[6 \l]>16 <5> <6 4>8 \bc <[5 3]> %15
+	r4. <7!>8 <9 4!> <8 3>4.
+	r8. <[6\\]>16 <8 6>8 <7 5> r4 <6>
+	\bo <[6] 4> \bc <[5] 3>2.
+	r1 %19 finis
+}
+
+AgnusOrgano = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoAgnus
+		\mvTr a8\fE-\tuttiE a a a cis d d d
+		d cis a'16 e cis a dis8 dis dis dis
+		e e e16 gis h gis e8 e e e
+		eis eis eis eis e e e e
+		dis e h h e e' h gis %5
+		e e e e gis a a, a'~
+		a gis16 fis gis8 e ais, ais ais ais
+		h h h'16 fis dis fis h,8 h h h
+		his his his his cis cis cis cis
+		fis, fis' cis a fis fis' fis fis %10
+		h h, h' h gis gis gis gis
+		a a, a'16 e cis a d8 d d dis \noBreak
+		e2 e\fermata \bar "||"
+		\tempoDona a8. a16 a8 gis a4 a16 e cis e \noBreak
+		a,4 r8 cis d4 e %15
+		a, r8 a'16 gis fis8 e dis4
+		e r8 cis' a a h h,
+		e fis16 gis a h cis dis e8. e,16 gis8 h
+		e4 e16 h gis h e,4 r8 gis
+		a4 h e, r8 e %20
+		fis4 gis a8 a, a'8. a16
+		d8 d gis,16 a h gis cis8 cis, fis8. fis16
+		h8 h e,16 fis gis e a4 r
+		r8 a gis16 a h gis a8 a e e
+		a,4 r r2\fermata \bar "|." %25 FINIS
+	}
+}
+
+AgnusBassFigures = \figuremode {
+	r2 <6 5!>
+	<4+ 2>8 <[6]> r4 <7!>2
+	\bo <[6!] 4>8 \bc <[5] 3>2..
+	<7>2 <4+ 2>
+	<6 5!>4 <4>8 <_+> r2 %5
+	r <6 5!>
+	<4+ 2>8 <6>4. <7!>2
+	\bo <[6!] 4>8 <5 _+>4. \bc <[_+]>2
+	<7 [_+]>2 \bo <[6] 4>4 \bc <[5] _+>
+	r1 %10
+	r2 <6 5>
+	<9 4>8 <8 3>4. <3>8 <6>4 <5>8
+	<9 4>4 <8 3>8 <7+ 2> <8 3>2
+	r4. <[6]>8 r2
+	r4. <[6]>8 <9> <8> <7>4 %15
+	r2 <6\\>4 <6 5>
+	r2 <6 5>4 <_+>
+	r2. <[6]>8 <_+>
+	r2.. <[6]>8
+	<9> <8> <7 _+>2. %20
+	<7>8 <6!> <6 5>2.
+	r4 <7> q q
+	q q2.
+	r4 <6 3>16 \bassFigureExtendersOn <6\! 3> q q \bassFigureExtendersOff r4 <4>8 <3>
+	r1 %25 FINIS
+}

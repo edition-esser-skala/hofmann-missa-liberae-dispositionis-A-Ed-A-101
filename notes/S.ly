@@ -293,13 +293,142 @@ CredoSopranoLyrics = \lyricmode {
 	men. %66 finis
 }
 
-% SopranoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% SopranoLyrics = \lyricmode {
-%
-% }
+SanctusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr cis'4\fE^\tuttiE cis r2
+		cis4 cis r2
+		cis4 cis d8 d16 d d8 cis
+		cis8. h16 h4 \tempoPleni h8 h16 h e8 h16 h
+		cis8 h r4 cis8 cis16 cis cis8 cis16 cis %5
+		d8 cis e4. d16[ cis] d4~
+		d8 cis16 cis h4 a r8 e
+		e8. fis16 g8 g g fis r fis
+		d'8. cis16 h8 a gis gis a a
+		a4( gis) a e8 e %10
+		fis2 e\fermata \bar "|." %11 finis
+	}
+}
+
+SanctusSopranoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus Do -- mi -- nus De -- us
+	Sa -- ba -- oth. Ple -- ni sunt coe -- li et
+	ter -- ra, ple -- ni sunt coe -- li et %5
+	ter -- ra glo -- _ _
+	ri -- a tu -- a. O --
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex -- %10
+	cel -- sis. %11 finis
+}
+
+BenedictusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoBenedictus
+		\mvTr a'4.\fE^\tuttiE a8 a4 a8 a
+		h h16 h h8 cis16 d cis8. h16 a4
+		cis4. cis8 h e r h
+		h a r a gis gis16 gis fis8. fis16
+		e4 r r2 %5
+		e'4. e8 e4 e8 e,
+		fis fis16 fis fis8 gis16 a gis8. fis16 e8 e
+		d'!4 d8 d d8. cis16 cis8 cis
+		h4 h8 h gis8. gis16 a8 a
+		d d16 d cis8. cis16 h4 r %10
+		a4. a8 a4 a8 a
+		h h16 h h8 cis16 d cis8. h16 a4
+		fis4. fis8 fis e r e
+		e d r d' cis cis16 cis h8. h16
+		a4 r r r8 gis %15
+		a8. a16 a8 g g fis r fis
+		d'8. cis16 h8 a gis gis a a
+		a4( gis) a e8 e
+		fis2 e\fermata \bar "|." %19 finis
+	}
+}
+
+BenedictusSopranoLyrics = \lyricmode {
+	Be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni, %5
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni, qui
+	ve -- nit in no -- mi -- ne, in
+	no -- mi -- ne Do -- mi -- ni, in
+	no -- mi -- ne Do -- mi -- ni, %10
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni. O -- %15
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex --
+	cel -- sis. %19 finis
+}
+
+AgnusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoAgnus
+		\mvTr a'4.\fE^\tuttiE e8 g fis r fis
+		gis a r a a a16 a a8 a
+		a gis r4 h4. h8
+		h4 h ais4. ais8
+		a gis fis4 e r %5
+		e'4. h8 d! cis r cis
+		dis e r e e g,16 g g8 g
+		g fis r4 h4. h8
+		a4. gis16([ fis)] fis4( eis)
+		fis r cis'4. cis8 %10
+		d4 d8 d d d16 d d8 d
+		d cis r cis fis h,16 h h8 a \noBreak
+		a4( gis8[ fis)] gis2\fermata \bar "||"
+		\tempoDona a8. a16 a8 h cis4 cis \noBreak
+		r8 a e'4. d8 \appoggiatura e16 d8[ cis16 h] %15
+		cis4 r8 cis dis8.[ e16] fis8[ a,]
+		gis[ h] e4. fis16[( cis]) dis4
+		e r e8. e16 e8 dis
+		e4 e r2
+		r r8 h e4~ %20
+		e8[ d!] \appoggiatura e16 d8[^\critnote cis16 h] cis4 cis8. cis16
+		fis8 fis fis4 e e8. e16
+		d8 d d4 cis8 cis( h16[ cis d h])
+		cis8 e4 e8 e cis h4
+		a r r2\fermata \bar "|." %25 FINIS
+	}
+}
+
+AgnusSopranoLyrics = \lyricmode {
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re, mi -- se --
+	re -- re no -- bis. %5
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re no --
+	bis. A -- gnus %10
+	De -- i, qui tol -- lis pec -- ca -- ta
+	mun -- di, qui tol -- lis pec -- ca -- ta
+	mun -- di:
+	Do -- na no -- bis pa -- cem,
+	pa -- _ _ _ %15
+	cem, pa -- _ _
+	_ _ cem, pa --
+	cem, do -- na no -- bis
+	pa -- cem,
+	pa -- _ %20
+	_ cem, do -- na
+	no -- bis pa -- cem, do -- na
+	no -- bis pa -- cem, pa --
+	cem, do -- na no -- bis pa --
+	cem. %25 FINIS
+}

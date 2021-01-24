@@ -147,9 +147,78 @@ CredoViolinoI = {
 	}
 }
 
-% ViolinoI = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
+SanctusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoSanctus
+		<cis' a'>4\fE q e,16 e8 e e e16
+		g'4 g e,16 e8 e e e16
+		cis'4 cis d8 d16 d d8 cis
+		cis8. h16 h4 \tempoPleni e,16 fis32 gis a h cis dis e16 h gis e
+		cis'8 h r4 a16 h32 cis d e fis gis a16 e cis a %5
+		d8 cis \once \tieDashed e4~ e16 fis, d' cis d4~
+		d16 h' cis, a' h,8 gis' a,4 r8 e
+		e8. fis16 g8 g g fis r fis
+		d'8. cis16 h8 a \tuplet 6/4 4 { gis16 e' fis gis fis e a a, h cis h a }
+		e8 a16 cis, h8 gis' \tuplet 6/4 4 { a,16 a' h cis h a } e'8 e, %10
+		fis2 e\fermata \bar "|." %11 finis
+	}
+}
+
+BenedictusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoBenedictus
+		a'16.\fE a'32 a16. a32 \tuplet 6/4 4 { a16 a, h cis h a } a16. a'32 a16. a32 \tuplet 6/4 4 { a16 a, h cis h a }
+		h16. fis'32 fis16. a,32 gis16. h32 cis16. d32 \appoggiatura d16 cis8. h16 a4
+		\kneeBeam a,16. a''32 a16. a32 \tuplet 6/4 4 { a16 a, h cis h a } h8 e r16. e32 gis16. h,32
+		h8\trill a r16. a32 fis'16. a,32 gis16. e'32 e16. gis,32 fis8 dis'
+		e, gis16 fis e gis cis, e a, cis' h a gis8 fis\trill %5
+		e16. e'32 e16. e32 \tuplet 6/4 4 { e16 e, fis gis fis e } e16. e'32 e16. e32 \tuplet 6/4 4 { e16 e, fis gis fis e }
+		fis16. cis'32 cis16. e,32 dis16. fis32 gis16. a32 \appoggiatura a16 gis8. fis16 e8 e
+		d'!4. h'16( d,) d8.(\trill cis32 d) cis8 cis
+		h8. fis'16 e( d cis h) \appoggiatura a8 gis4 a8 a'32( gis fis e)
+		d8 h'16 d, \appoggiatura d8 cis4\trill h r %10
+		a16. a'32 a16. a32 \tuplet 6/4 4 { a16 a, h cis h a } a16. a'32 a16. a32 \tuplet 6/4 4 { a16 a, h cis h a }
+		h16. fis'32 fis16. a,32 gis16. h32 cis16. d32 \appoggiatura d16 cis8. h16 a4
+		d,16. fis'32 fis16. fis32 \tuplet 6/4 4 { fis16 fis, gis a gis fis } fis8\trill e e'16. cis32 a16. e32
+		e8\trill d d''16. h32 gis16. d32 cis8 a'16. cis,32 h8 gis'
+		a, cis16 h a cis fis, a d, fis e d cis8\trill h %15
+		<a e' a>8. a'16 a8 g g fis r fis
+		d'8. cis16 h8 a \tuplet 6/4 4 { gis16 e' fis gis fis e a a, h cis h a }
+		e8 a16 cis, h8 gis' \tuplet 6/4 4 { a,16 a' h cis h a } e'8 e,
+		fis2 e\fermata \bar "|." %19 finis
+	}
+}
+
+AgnusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoAgnus
+		a'4\fE e'16( cis a e) g8 fis fis'16( d a fis)
+		gis8 a r a'4 c,16. c32 c8 c
+		c8 h r4 e8 h h16( cis) cis( d)
+		d8 h'~ h16 d, cis h ais8 cis'~ cis16 cis, h ais
+		fis'16. a,32 gis16. e'32 fis,8 dis' e,4 r %5
+		e' h'16( gis e h) d!8 cis cis'16( a e cis)
+		dis8 e r e4 g,16. g32 g8 g
+		g fis r4 h8 fis fis16( gis) gis( a)
+		a8 a'~ a16 a, gis fis fis8 a,16. fis'32 gis,8 eis'
+		fis4 r cis' cis'16( a fis cis) %10
+		d4 d'16( h fis d) d8 h'16 gis \once \slurDashed d'( h gis d)
+		d8 cis r cis fis h,16. h32 h8 a \noBreak
+		a4 gis8 fis gis2\fermata \bar "||"
+		\tempoDona a,8 cis16. e32 a16. cis32 h16. d32 cis8 e32( d cis h) a16-! e-! cis-! e-! \noBreak
+		a,8 a' e'16 e, e e' e fis, fis d' \appoggiatura e16 d8 cis16 h %15
+		cis a e cis a a' \tuplet 3/2 8 { cis[ h a] } dis( e fis gis) a-! fis-! dis-! a-!
+		gis8 h e4~ e16 fis, fis e' h,8 dis'
+		e,4 r e8 gis16. h32 e16. gis32 fis16. a32
+		gis8 h32( a gis fis) e16 h gis h e,8 h h'16 h, h h'
+		h cis, cis a' \appoggiatura h a8 gis16 fis gis8 h e16 e, e e' %20
+		e fis, fis d'! \appoggiatura e d8 cis16 h cis a e cis a a' \tuplet 3/2 8 { cis[ h a] }
+		fis' d, fis' fis fis gis, fis' fis e cis, e' e e fis, e' e
+		d h, d' d d e, d' d cis a, cis' cis h cis d h
+		cis e8 e e e16 e fis32 gis a16 cis, h8 gis'
+		a,4 r r2\fermata \bar "|." %25 FINIS
+	}
+}

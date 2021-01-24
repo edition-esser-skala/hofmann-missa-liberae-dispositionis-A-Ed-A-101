@@ -293,13 +293,142 @@ CredoAltoLyrics = \lyricmode {
 	men. %66 finis
 }
 
-% AltoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+SanctusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr e4\fE^\tuttiE e r2
+		g4 g r2
+		fis4 fis fis8 fis16 fis e8 e
+		e8. e16 e4 \tempoPleni e8 e16 e e8 e16 e
+		e8 e r4 e8 e16 e e8 e16 e %5
+		e8 e r4 fis~ fis16[ gis a h]
+		gis8 a16 a a8([ gis)] a4 r8 cis,
+		cis8. d16 e8 e e d r d
+		fis8. e16 d8 cis h h cis e
+		e2 e4 cis8 cis %10
+		d2 cis\fermata \bar "|." %11 finis
+	}
+}
+
+SanctusAltoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus Do -- mi -- nus De -- us
+	Sa -- ba -- oth. Ple -- ni sunt coe -- li et
+	ter -- ra, ple -- ni sunt coe -- li et %5
+	ter -- ra glo --
+	_ ri -- a tu -- a. O --
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex -- %10
+	cel -- sis. %11 finis
+}
+
+BenedictusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoBenedictus
+		\mvTr e4.\fE^\tuttiE e8^\critnote fis4 fis8 fis
+		fis fis16 fis e8 e16 e e8. e16 e4
+		e4. e8 e e r e
+		e fis r fis e e16 e e8 dis
+		e4 r r2 %5
+		gis4. gis8 gis4 gis8 e
+		e e16 e dis8 e16 fis e8. fis16 gis4
+		r8 e e e16 e e8. e16 e8 e
+		fis4 fis8 fis e8. e16 e8 e
+		e e16 e e8. e16 e4 r %10
+		e4. e8 fis4 fis8 fis
+		fis fis16 fis e8 e16 e e8. e16 e4
+		d4. d8 d cis r cis
+		cis h r e e e16 e e8. e16
+		e4 r r r8 e %15
+		e8. e16 e8 e e d r d
+		fis8. e16 d8 cis h h cis e
+		e2 e4 cis8 cis
+		d2 cis\fermata \bar "|." %19 finis
+	}
+}
+
+BenedictusAltoLyrics = \lyricmode {
+	Be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni, %5
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	qui ve -- nit in no -- mi -- ne, in
+	no -- mi -- ne Do -- mi -- ni, in
+	no -- mi -- ne Do -- mi -- ni, %10
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni. O -- %15
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex --
+	cel -- sis. %19 finis
+}
+
+AgnusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoAgnus
+		\mvTr e4.\fE^\tuttiE e8 e d r d
+		e e r e fis fis16 fis fis8 fis
+		e e r4 gis4. gis8
+		gis4 gis fis4. fis8
+		fis e e([ dis)] e4 r %5
+		gis4. gis8 e e r e
+		fis gis r gis g e16 e e8 e
+		e dis r4 dis4. dis8
+		dis4. dis8 cis2
+		cis4 r fis4. fis8 %10
+		fis4 fis8 fis e e16 e e8 e
+		e e r a a fis16 fis fis8 fis \noBreak
+		fis4( e8[ dis)] e2\fermata \bar "||"
+		\tempoDona e8. e16 e8 e e4 e \noBreak
+		r r8 e( fis4 e) %15
+		e8 e a4~ a8[ gis] fis4
+		e r8 gis( fis) fis fis4
+		gis r gis8. gis16 gis8 fis
+		gis4 gis r8 e h'4~
+		h8[ a] \appoggiatura h16 a8[^\critnote gis16 fis] gis4 r8 gis( %20
+		fis4 e) e a8. a16
+		a8 a h4 h a8. a16
+		a8 a gis4 a8 a( gis16[ a h gis])
+		a8 e4 e8 e e e4
+		e r r2\fermata \bar "|." %25 FINIS
+	}
+}
+
+AgnusAltoLyrics = \lyricmode {
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re, mi -- se --
+	re -- re no -- bis. %5
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re no --
+	bis. A -- gnus %10
+	De -- i, qui tol -- lis pec -- ca -- ta
+	mun -- di, qui tol -- lis pec -- ca -- ta
+	mun -- di:
+	Do -- na no -- bis pa -- cem,
+	pa -- %15
+	cem, pa -- _ _
+	cem, \xE no -- bis \x pa --
+	cem, do -- na no -- bis
+	pa -- cem, pa -- _
+	_ cem, pa -- %20
+	cem, do -- na
+	no -- bis pa -- cem, do -- na
+	no -- bis pa -- cem, pa --
+	cem, do -- na no -- bis pa --
+	cem. %25 FINIS
+}

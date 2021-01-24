@@ -680,6 +680,11 @@ tempoCredo = \tempoMarkup "Allegro"
 	tempoEtIncarnatus = \tempoMarkup "Adagio"
 	tempoCrucifixus = \tempoMarkup "Andante"
 	tempoEtResurrexit = \tempoMarkup "Allegro"
+tempoSanctus = \tempoMarkup "Adagio"
+	tempoPleni = \tempoMarkup "Allegro"
+tempoBenedictus = \tempoMarkup "Allegretto"
+tempoAgnus = \tempoMarkup "Adagio"
+	tempoDona = \tempoMarkup "Allegro"
 
 
 \include "notes/vl1.ly"

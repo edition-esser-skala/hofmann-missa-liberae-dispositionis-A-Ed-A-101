@@ -293,13 +293,142 @@ CredoTenoreLyrics = \lyricmode {
 	men. %66 finis
 }
 
-% TenoreNotes = {
-% 	\relative c' {
-% 		\clef "treble_8"
-%
-% 	}
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+SanctusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key a \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr a4\fE^\tuttiE a r2
+		e'4 e r2
+		cis4 cis h8 h16 h h8 a!
+		a8. gis16 gis4 \tempoPleni gis8 gis16 gis gis8 gis16 gis
+		a8 gis r4 a8 a16 a a8 a16 a %5
+		h8 a r4 a h~
+		h8 cis16 d e4 e r8 a,
+		a8. a16 a8 a a a r a
+		d8. e16 fis8 fis e e e d16([ cis)]
+		cis4( h) a a8 a %10
+		a2 a\fermata \bar "|." %11 finis
+	}
+}
+
+SanctusTenoreLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus Do -- mi -- nus De -- us
+	Sa -- ba -- oth. Ple -- ni sunt coe -- li et
+	ter -- ra, ple -- ni sunt coe -- li et %5
+	ter -- ra glo -- _
+	ri -- a tu -- a. O --
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex -- %10
+	cel -- sis. %11 finis
+}
+
+BenedictusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key a \major \time 4/4 \autoBeamOff \tempoBenedictus
+		\mvTr cis4.\fE^\tuttiE cis8 cis4 cis8 a
+		a a16 a gis8 a16 h a8. h16 cis4
+		a4. a8 h h r gis
+		gis fis r h h h16 h h8. h16
+		h4 r r2 %5
+		h4. h8 cis4 cis8 cis
+		cis cis16 cis h8 h16 h h8. h16 h4
+		r8 h h h16 h h8. a16 a8 a
+		h4 h8 h h8. h16 cis8 cis
+		h h16 h a8. a16 gis4 r %10
+		cis4. cis8 cis4 cis8 cis
+		a a16 a gis8 a16 h a8. h16 cis4
+		a4. a8 a a r a
+		a h r h a a16 a a8 gis
+		a4 r r r8 h %15
+		cis8. cis16 cis8 a a a r d
+		d8. e16 fis8 fis e e e d16([ cis)]
+		cis4( h) a a8 a
+		a2 a\fermata \bar "|." %19 finis
+	}
+}
+
+BenedictusTenoreLyrics = \lyricmode {
+	Be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni, %5
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	qui ve -- nit in no -- mi -- ne, in
+	no -- mi -- ne Do -- mi -- ni, in
+	no -- mi -- ne Do -- mi -- ni, %10
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni. O -- %15
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex --
+	cel -- sis. %19 finis
+}
+
+AgnusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key a \major \time 4/4 \autoBeamOff \tempoAgnus
+		\mvTr cis4.\fE^\tuttiE cis8 a a r a
+		h cis r cis c c16 c c8 c
+		c h r4 e4. e8
+		d4 d cis4. cis8
+		h8 h h4 h r %5
+		h4. h8 h a r cis
+		h h r h cis cis16 cis cis8 cis
+		h h r4 fis4. fis8
+		fis4. gis16([ a)] a4( gis)
+		fis r a4. a8 %10
+		h4 h8 h h h16 h h8 h
+		h a r a a h16 h h8 h \noBreak
+		h2 h\fermata \bar "||"
+		\tempoDona cis8. cis16 cis8 h a4 a \noBreak
+		r r8 a( a4 gis) %15
+		a r8 cis16([ h] a4. h8)
+		h4 r8 cis4 cis8 h4
+		h r h8. h16 h8 h
+		h4 h r r8 h(
+		cis4 dis) e r8 gis,( %20
+		a4 h) a e'8. e16
+		d8 d d4 cis cis8. cis16
+		h8 h h4 a r
+		r8 cis( h16[ cis d h]) cis8 a4( gis8)
+		a4 r r2\fermata \bar "|." %25 FINIS
+	}
+}
+
+AgnusTenoreLyrics = \lyricmode {
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re, mi -- se --
+	re -- re no -- bis. %5
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re no --
+	bis. A -- gnus %10
+	De -- i, qui tol -- lis pec -- ca -- ta
+	mun -- di, qui tol -- lis pec -- ca -- ta
+	mun -- di:
+	Do -- na no -- bis pa -- cem,
+	pa -- %15
+	cem, pa --
+	cem, no -- bis pa --
+	cem, do -- na no -- bis
+	pa -- cem, pa --
+	cem, pa -- %20
+	cem, do -- na
+	no -- bis pa -- cem, do -- na
+	no -- bis pa -- cem,
+	pa -- cem, pa --
+	cem. %25 FINIS
+}

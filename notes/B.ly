@@ -282,13 +282,142 @@ Pa -- trem o -- mni -- po -- ten --
 	men. %66 finis
 }
 
-% BassoNotes = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+SanctusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr a4\fE^\tuttiE a r2
+		a4 a r2
+		ais4 ais h8 h'16 h gis8 a
+		e8. e16 e4 \tempoPleni e8 e16 e e8 e16 e
+		a8 e r4 a8 a16 a a8 a16 a %5
+		gis8 a r4 d,4.( cis16[ d]
+		e8) a16 a e4 a, r8 a
+		a8. a16 a8 a d d r d
+		h8. cis16 d8 dis e e cis a
+		e'2 a,4 a8 a %10
+		d2 a\fermata \bar "|." %11 finis
+	}
+}
+
+SanctusBassoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus Do -- mi -- nus De -- us
+	Sa -- ba -- oth. Ple -- ni sunt coe -- li et
+	ter -- ra, ple -- ni sunt coe -- li et %5
+	ter -- ra glo --
+	ri -- a tu -- a. O --
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex -- %10
+	cel -- sis. %11 finis
+}
+
+BenedictusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \autoBeamOff \tempoBenedictus
+		\mvTr a'4.\fE^\tuttiE gis8 fis4 fis8 e
+		d d16 d e8 e16 e a,8. a16 a4
+		a'4. a8 gis gis r e
+		cis dis r dis e e16 e h8. h16
+		e4 r r2 %5
+		e4. dis8 cis4 cis8 h
+		a a16 a h8 h16 h e8. e16 e4
+		r8 e gis fis16 e a8. a,16 a8 a
+		d4 d8 d d8. d16 cis8 cis
+		gis gis16 gis a8. a16 e'4 r %10
+		a4. gis8 fis4 fis8 e
+		d d16 d e8 e16 e a,8. a16 a4
+		d4. d8 a' a, r a'
+		fis gis r e a a16 a e8. e16
+		a,4 r r r8 e' %15
+		a,8. a16 a8 a d d r d
+		h8. cis16 d8 dis e e cis a
+		e'2 a,4 a8 a
+		d2 a\fermata \bar "|." %19 finis
+	}
+}
+
+BenedictusBassoLyrics = \lyricmode {
+	Be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni, %5
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni, qui
+	ve -- nit in no -- mi -- ne, in
+	no -- mi -- ne Do -- mi -- ni, in
+	no -- mi -- ne Do -- mi -- ni, %10
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi -- ni,
+	be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni. O -- %15
+	san -- na in ex -- cel -- sis, o --
+	san -- na in ex -- cel -- sis, in ex --
+	cel -- sis, in ex --
+	cel -- sis. %19 finis
+}
+
+AgnusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \autoBeamOff \tempoAgnus
+		\mvTr a4.\fE^\tuttiE a8 cis d r d
+		d cis r a' dis, dis16 dis dis8 dis
+		e e r4 e4. e8
+		eis4 eis e4. e8
+		dis e h4 e r %5
+		e4. e8 gis a r a
+		a gis r e ais, ais16 ais ais8 ais
+		h h r4 h4. h8
+		his4. his8 cis2
+		fis4 r fis4. fis8 %10
+		h4 h,8 h' gis gis16 gis gis8 gis
+		a a, r a d d16 d d8 dis \noBreak
+		e2 e\fermata \bar "||"
+		\tempoDona a8. a16 a8 gis a4 a \noBreak
+		r r8 cis,( d4 e) %15
+		a, r8 a'16([ gis] fis8[ e] dis4)
+		e r8 cis'( a) a h4
+		e, r e8. e16 gis8 h
+		e4 e, r r8 gis(
+		a4 h) e, r8 e( %20
+		fis4 gis) a a8. a16
+		d8 d gis,16([ a h gis)] cis4 fis,8. fis16
+		h8 h e,16([ fis gis e)] a4 r
+		r8 a( gis16[ a h gis] a8) a e4
+		a, r r2\fermata \bar "|." %25 FINIS
+	}
+}
+
+AgnusBassoLyrics = \lyricmode {
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re, mi -- se --
+	re -- re no -- bis. %5
+	A -- gnus De -- i, qui
+	tol -- lis, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se --
+	re -- re no --
+	bis. A -- gnus %10
+	De -- i, qui tol -- lis pec -- ca -- ta
+	mun -- di, qui tol -- lis pec -- ca -- ta
+	mun -- di:
+	Do -- na no -- bis pa -- cem,
+	pa -- %15
+	cem, pa --
+	cem, no -- bis pa --
+	cem, do -- na no -- bis
+	pa -- cem, pa --
+	cem, \xE pa -- %20
+	cem, \x do -- na
+	no -- bis pa -- cem, do -- na
+	no -- bis pa -- cem,
+	pa -- cem, pa --
+	cem. %25 FINIS
+}

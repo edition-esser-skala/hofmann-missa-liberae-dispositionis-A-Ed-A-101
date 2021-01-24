@@ -136,12 +136,190 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		number = "3"
+	% 		title = "C R E D O"
+	% 	}
+	% 	\tocSection "3" "Credo"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\CredoViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\CredoViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \CredoSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \CredoSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \CredoAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \CredoAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \CredoTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \CredoTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \CredoBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \CredoBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "org" "b" }
+	% 					% \transpose c c,
+	% 					\CredoOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \CredoBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 80 }
+	% 	}
+	% }
+	% \bookpart {
+	% 	\header {
+	% 		number = "4"
+	% 		title = "S A N C T U S"
+	% 	}
+	% 	\tocSection "4" "Sanctus"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\SanctusViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\SanctusViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \SanctusSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \SanctusSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \SanctusAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \SanctusAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \SanctusTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \SanctusTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \SanctusBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \SanctusBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "org" "b" }
+	% 					% \transpose c c,
+	% 					\SanctusOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \SanctusBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
+	% \bookpart {
+	% 	\header {
+	% 		number = "5"
+	% 		title = "B E N E D I C T U S"
+	% 	}
+	% 	\paper { page-count = #4 }
+	% 	\tocSection "5" "Benedictus"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\BenedictusViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\BenedictusViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \BenedictusSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \BenedictusSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \BenedictusAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \BenedictusAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \BenedictusTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \BenedictusTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \BenedictusBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \BenedictusBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "org" "b" }
+	% 					% \transpose c c,
+	% 					\BenedictusOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \BenedictusBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			number = "3"
-			title = "C R E D O"
+			number = "6"
+			title = "A G N U S   D E I"
 		}
-		\tocSection "3" "Credo"
+		% \tocSection "6" "Agnus Dei"
 		\score {
 			<<
 				\new StaffGroup <<
@@ -149,50 +327,50 @@
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\CredoViolinoI
+							\AgnusViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\CredoViolinoII
+							\AgnusViolinoII
 						}
 					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \CredoSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \AgnusSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \CredoSopranoLyrics
+					\new Lyrics \lyricsto Soprano \AgnusSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \CredoAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \AgnusAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \CredoAltoLyrics
+					\new Lyrics \lyricsto Alto \AgnusAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \CredoTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \AgnusTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \CredoTenoreLyrics
+					\new Lyrics \lyricsto Tenore \AgnusTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \CredoBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \AgnusBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \CredoBassoLyrics
+					\new Lyrics \lyricsto Basso \AgnusBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup \center-column { "org" "b" }
 						% \transpose c c,
-						\CredoOrgano
+						\AgnusOrgano
 					}
 				>>
-				\new FiguredBass { \CredoBassFigures }
+				\new FiguredBass { \AgnusBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 80 }
+			\midi { \tempo 4 = 60 }
 		}
 	}
 }
