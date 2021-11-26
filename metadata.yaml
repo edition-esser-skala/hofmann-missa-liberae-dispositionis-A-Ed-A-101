@@ -1,17 +1,12 @@
 composer: Hofmann, Leopold
 title: Missa Liberae Dispositionis
-id: (A-Ed A 101)
 genre: mass
 scoring: S, A, T, B (coro), 2 vl, b, org
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: A 101
-    type: manuscript copy
-    date: unknown
     rism: 600037899
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/555.html
-github: hofmann-missa-liberae-dispositionis-A-Ed-A-101
+    principal: true
 imslp: Missa_Liberae_Dispositionis_(Hofmann,_Leopold)
-notes:
-
